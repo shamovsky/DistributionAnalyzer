@@ -75,7 +75,7 @@ class DistributionAnalyzer:
 
 
 # Streamlit app
-st.title("Distribution Analyzer")
+st.title("DistriPy")
 
 distribution_type = st.selectbox("Select Distribution", ['Weibull', 'Geometric', 'Bernoulli', 'Binomial', 'Exponential', 'Normal', 'Gamma'])
 
