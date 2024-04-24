@@ -1,9 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
+import pandas as pd
+import base64
 
 
-class DistriPy:
+class distriPy:
     def __init__(self, distribution_type, params):
         self.distribution_type = distribution_type
         self.params = params
@@ -169,7 +171,7 @@ if distribution_type:
         params = (n, p)
 
     if params:
-        analyzer = DistriPy(distribution_type, params)
+        analyzer = distriPy(distribution_type, params)
 
         st.write(analyzer.distribution_facts())
 
